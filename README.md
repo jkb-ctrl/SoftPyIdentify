@@ -3,13 +3,13 @@ SoftPyIdentify library with tools to identify the model of the actuators with fl
 
 This module provides a set of functions for the identification of the following transfer function:
 
-v = f_nlr(u)
+v = f<sub>nlr</sub>(u)
 
 y = G<sub>slow</sub>(s)*G<sub>fast</sub>(s)*v
 
 where:
 - f<sub>nlr</sub>(u) - input nonlinearity as polynomial
-- G<sub>slow</sub>(s) = $\frac{s+z_0}/{s+s_0}$
+- G<sub>slow</sub>(s) = $\frac{s+z_0}{s+s_0}$
 - G<sub>fast</sub>(s) = $\frac{k*(\alpha^2 + \omega^2)}{s^2 + 2*\alpha*s + \alpha^2 + \omega^2}$
 
 The transfer functions holds G<sub>slow</sub>(0)*G<sub>fast</sub>(0) = 1, because the gain is specified in the f<sub>nlr</sub>(u).
