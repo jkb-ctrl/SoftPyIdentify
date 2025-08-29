@@ -26,6 +26,9 @@ The auxiliary functions for ploting are:
 
 Install
 -----
+Directly from github:
+
+pip install git+https://github.com/jkb-ctrl/SoftPyIdentify.git
 
 Example
 -----
