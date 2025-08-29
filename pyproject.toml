@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "softpyidentify"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="Jakub Bernat", email="jakub.bernat@put.poznan.pl" },
 ]
