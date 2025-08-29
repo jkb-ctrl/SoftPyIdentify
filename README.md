@@ -5,14 +5,14 @@ This module provides a set of functions for the identification of the following 
 
 v = f_nlr(u)
 
-y = Gslow(s)*Gfast(s)*v
+y = G<sub>slow</sub>(s)*G<sub>fast</sub>(s)*v
 
 where:
-- f_nlr(u) - input nonlinearity
-- Gslow(s) - (s+z0)/(s+s0)
-- Gfast(s) - k*(alpha^2 + omega^2)/(s^2 + 2*alpha*s + alpha^2 + omega^2)
+- f<sub>nlr</sub>(u) - input nonlinearity as polynomial
+- G<sub>slow</sub>(s) = $\frac{s+z_0}/{s+s_0}$
+- G<sub>fast</sub>(s) = $\frac{k*(\alpha^2 + \omega^2)}{s^2 + 2*\alpha*s + \alpha^2 + \omega^2}$
 
-The transfer functions holds Gslow(0)*Gfast(0) = 1, because the gain is specified in the f_nlr(u).
+The transfer functions holds G<sub>slow</sub>(0)*G<sub>fast</sub>(0) = 1, because the gain is specified in the f<sub>nlr</sub>(u).
 
 The main functions are:
 - split signal
@@ -32,7 +32,7 @@ pip install git+https://github.com/jkb-ctrl/SoftPyIdentify.git
 
 Example
 -----
-See example.py to see how to use the package.
+See example.py (in https://github.com/jkb-ctrl/SoftPyIdentify-examples) to see how to use the package.
 
 Notes
 -----
